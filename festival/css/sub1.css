@@ -1,0 +1,683 @@
+/*소개글*/
+.introduction_section {
+    padding: 80px 0 20px;
+}
+.introduction_section .section_title {
+    position: relative;
+}
+
+.introduction_section .intro_text{
+    margin: 80px auto 0;
+    text-align: center;
+	line-height: 1.6;
+	word-break: keep-all;
+    font-size: 16px;
+}
+.bold {
+    font-weight: bold;
+    font-size: 20px
+}
+
+/*일정*/
+.schedule_seciton {
+    padding: 80px 0 40px;
+}
+.schedule_seciton .section_title {
+    position: relative;
+}
+.schedule_text{
+    width: 60%;
+    margin: 80px auto;
+    text-align: center;
+	line-height: 1.6;
+	word-break: keep-all;
+    font-size: 16px;
+}
+/*오시는길*/
+.way_section {
+    padding-bottom: 80px;
+}
+.way_section .section_title {
+    position: relative;
+}
+
+.find_box{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid black;
+    margin: 80px auto 20px;
+}
+
+.traffic_select{
+    width: 95%;
+    margin: 0 auto 20px;
+    box-sizing: border-box;
+    display: none;
+    border: 1px solid #4a4a49;
+}
+.traffic_select li{
+    width: 100%;
+/*    margin: 0 auto;*/
+    padding: 0 10px;
+    height: 50px;
+    line-height: 45px;
+/*    border: 1px solid #4a4a49;*/
+    border-bottom: 1px solid #4a4a49;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #BBE3DB;
+    font-family: 'BM';
+}
+.traffic_select li:hover {
+    background-color: #20a286;
+}
+.traffic_select li:focus {
+    background-color: #20a286;
+}
+.traffic_select li:last-child {
+    border-bottom: none;
+}
+
+.start{
+    width: 95%;
+    display: flex;
+    height: 52px;
+    border: 1px solid #4a4a49;
+    background-color: white;
+    margin: 20px auto 10px;
+	line-height: 40px;
+	font-size: 20px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    line-height: 52px;
+}
+
+.start>img{
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.way_input{
+    width: 100%;
+	height: auto;
+    font-size: 20px;
+    padding: 10px;
+    border: 0px;
+    outline: none;
+    font-family: 'BM';
+}
+
+.way_btn {
+	width: 80px;
+    cursor: pointer;
+    border: 0px;
+    background-color: white;
+    position: relative;
+}
+.way_btn>img{
+    display: block;
+    border: 0px;
+    width: 50px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.arrival{
+    width: 95%;
+    display: flex;
+    height: 52px;
+    border: 1px solid #4a4a49;
+    background-color: #fff;
+    margin: 10px auto;
+    margin-bottom: 20px;
+	line-height: 52px;
+	font-size: 20px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+.arrival>img{
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/*탭*/
+.transportation_box{
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+.board{
+    width: 100%;
+    display: flex;
+	flex-flow: wrap;
+    margin: 0 auto;
+    position: relative;   
+    box-sizing: border-box;
+    border: 1px solid #4a4a49;
+}
+.board li{
+    width: 50%;
+}
+.board li img{
+    width: 100%;
+	padding: 30px;
+}
+.board li .board_box{
+    overflow: hidden;
+    height: 0;
+}
+.board>li.on .board_box{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+	top: 100%;
+}
+
+.board li .tab{
+    display: flex;
+    width: 100%;
+    margin-bottom:10px;
+    display: block;
+}
+.board .tab_box:nth-child(1),
+.board .tab_box:nth-child(3) {
+    border-right: 1px solid #4a4a49;
+    box-sizing: border-box;
+}
+.board .tab_box:nth-child(1),
+.board .tab_box:nth-child(2) {
+    border-bottom: 1px solid #4a4a49;
+}
+
+.tab{
+    display: flex;
+}
+.tab>img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5px 10px ;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Pathways{
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    margin-top: 50px;
+}
+
+.Pathways_txt{
+    padding: 10px;
+    margin-left: 20px;
+   width: 94%;
+}
+.Pathways .contents_box{
+    width: 100%;
+    height: 400px;
+    font-size: 15px;
+}
+.Pathways_txt p .ff{
+    width: 100%;
+    height: auto;
+    background-color: #0475f4;
+    border-radius: 20px;
+    color: white;
+    padding: 3px 7px;
+}
+
+.Pathways_txt .row01{
+    color: #0475f4;
+}
+
+.Pathways_txt .time{
+    font-weight: bold;
+    color: black;
+   
+}
+
+.Pathways_txt .time:after{
+    border-right: 1px solid #4A4A49;
+    content: "";
+    width: 10px;
+    padding-right: 5px;
+    
+}
+
+.Pathways_txt .money{
+    font-size: 11px;
+    color: #4A4A49;
+}
+
+.Pathways_txt .time_01{
+    color: grey;
+}
+
+.Pathways_txt .time_01:after{
+    border-right: 1px solid #4A4A49;
+    content: "";
+    width: 5px;
+    margin: 5px;
+}
+
+.Pathways_txt .time_02{
+    margin-bottom: 10px;
+}
+.highway{
+    font-size: 12px;
+    color: black;
+    line-height: 1.4;
+}
+
+.Pathways_txt p .red{
+    width: 100%;
+    height: auto;
+    background-color: #d80f17;
+    border-radius: 20px;
+    color: white;
+    padding: 3px 7px;
+    
+}
+.Pathways_txt p .yellow{
+    width: 100%;
+    height: auto;
+    background-color: #ffac00;
+    border-radius: 20px;
+    color: white;
+    padding: 3px 7px;
+}
+
+
+.Pathways_txt p.blue{
+    color: #0475f4;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Pathways_txt p b{
+	font-size: 25px;
+}
+
+/*.Pathways_txt p span:after{
+	border-right: 1px solid #4A4A49;
+    content: "";
+    margin: 10px;
+}*/
+
+
+.Pathways_txt p  span.asdf:after{
+    content: "";
+    margin: 10px;
+}
+
+
+
+/*---------------------------------------------------------*/
+
+
+.line_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+	background-color: #AAA;
+	border-radius: 6px;
+	margin: 30px 10px;
+	
+}
+
+.line_list li{
+    background-color: #AAA;
+    height: 20px;
+	text-align: center;
+	border-radius: 6px;
+}
+
+.line_list li.timeline_walk{
+    width: 50%;
+    height: auto;
+    background-color: #AAA;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+}
+
+.line_list li.timeline_walk>span{
+    width: 25px;
+    height: 25px;
+    background-color: #AAA;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_walk>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 3px -18px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.line_list li span.line_icon{
+    line-height: 20px;
+}
+
+/*------------------버스----------------------*/
+.line_list li.timeline_bus{
+    width: 55%;
+    height: auto;
+    background-color: #0475f4;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_bus>span{
+    width: 25px;
+    height: 25px;
+    background-color: #0475f4;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_bus>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 2px 3px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*
+------------------------------지하철--------------------------------------
+*/
+
+
+.line_list li.timeline_subway{
+    width: 55%;
+    height: 20px;
+    background-color: #20a286;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;    
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_subway>span{
+    width: 25px;
+    height: 25px;
+    background-color: #20a286;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_subway>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: -19px 3px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*-------------------------버스2-------------------------------------*/
+
+
+.line_list li.timeline_bus1{
+    width: 40%;
+    height: auto;
+    background-color: red;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_bus1>span{
+    width: 25px;
+    height: 25px;
+    background-color: #e35353;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_bus1>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 3px 2px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+/*-----------------------------------2번째 텍스트-------------*/
+
+
+.line_list li.timeline_walk01{
+    width: 40%;
+    height: auto;
+    background-color: #AAA;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+}
+
+.line_list li.timeline_walk01>span{
+    width: 25px;
+    height: 25px;
+    background-color: #AAA;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_walk01>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 2px -19px;
+    position: absolute;
+    width: 55px;
+    height: 25px;
+}
+
+.line_list li span.line_icon{
+    line-height: 20px;
+}
+
+/*------------------버스----------------------*/
+.line_list li.timeline_bus01{
+    width: 35%;
+    height: auto;
+    background-color: #0475f4;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_bus01>span{
+    width: 25px;
+    height: 25px;
+    background-color: #0475f4;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_bus01>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 1px 1px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*
+------------------------------지하철--------------------------------------
+*/
+
+
+.line_list li.timeline_subway01{
+    width: 40%;
+    height: 20px;
+    background-color: #20a286;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;    
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_subway01>span{
+    width: 25px;
+    height: 25px;
+    background-color: #20a286;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_subway01>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: -20px 3px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+
+/*-------------------------버스2-------------------------------------*/
+
+
+.line_list li.timeline_bus02{
+    width: 45%;
+    height: auto;
+    background-color: red;
+    /*border: 1px solid black;*/
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 6px;
+	color: white;
+}
+
+.line_list li.timeline_bus02>span{
+    width: 25px;
+    height: 25px;
+    background-color: #e35353;
+    position: absolute;
+    border-radius: 100%;
+    left: -10px;
+    top: -3px;
+    
+}
+
+.line_list li.timeline_bus02>span:before{
+    content:"";
+    display: block;
+    background-image: url(../images/timebar.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 3px 3px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+/*둘러보기*/
+.touring_section {
+    padding-top: 420px;
+    margin-bottom: 80px;
+}
+.touring_section .section_title {
+    position: relative;
+}
+
+.touring_box{
+	margin: 60px auto 0;
+	display: block;
+}
+
+.touring_box img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.touring_box .map_pc {
+    display: none;
+}

@@ -1,0 +1,88 @@
+/* 구매하기 */
+.purchase {
+    padding: 80px 0;
+    position: relative;
+}
+.section_title {
+    position: relative;
+}
+
+/* 탭 */
+.tab_content {
+    margin-top: 60px;
+    font-size: 0;
+    background-color: #BBE3DB;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"] + label {
+    width: 50%;
+    text-align: center;
+    display: inline-block;
+    background-color: #20a286;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'BM';
+    padding: 25px 0;
+}
+input[type="radio"]:checked +label {
+    background-color: #bbe3db;
+    color: #4a4a49;
+}
+
+.tab_box {
+    width: 100%;
+    background-color: #bbe3db;
+    display: none;
+}
+input[id="alcohol"]:checked ~ .alcohol_list {
+    display: block;
+}
+input[id="goods"]:checked ~ .goods_list {
+    display: block;
+}
+
+.alcohol_list,
+.goods_list {
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.alcohol_list li,
+.goods_list li {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.alcohol_list img,
+.goods_list img {
+    width: 100%;
+}
+.alcohol_list .txt_box,
+.goods_list .txt_box {
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+    background-color: #20a286;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'BM';
+}
+.alcohol_list li .txt_box h2, 
+.goods_list li .txt_box h2 {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.alcohol_list li .txt_box p, 
+.goods_list li .txt_box p {
+    font-size: 16px;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+.alcohol_list li .txt_box span, 
+.goods_list li .txt_box span {
+    font-size: 18px;
+}

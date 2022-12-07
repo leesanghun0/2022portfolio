@@ -1,0 +1,275 @@
+/* 페이지네이션 */
+.bar_section {
+    margin: 40px 0;
+}
+.long_bar {
+    width: 100%;
+    height: 10px;
+    background-color: #BBE3DB;
+    position: relative;
+}
+.bar {
+    display: block;
+    width: 33.3333%;
+    height: 10px;
+    top: 0;
+    position: absolute;
+    background-color: #20a286;
+}
+.bar1 {
+    left: 0;
+}
+.bar2 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bar3 {
+    right: 0;
+}
+
+/* 시작 페이지 */
+/* 버튼 */
+.find_section {
+    margin: 80px 0;
+}
+.find_btn{
+    background-color: #ffda4b;
+    height: 45px;
+    line-height: 50px;
+    text-align: center;
+    margin: 40px auto 20px;
+    font-family: 'BM';
+    font-size: 26px;
+    color: #4a4a49;
+}
+.find_btn a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.find_img img{
+    display: block;
+    width: 100%;
+}
+
+/* qna */
+.qna_section{
+    display: flex;
+    overflow: hidden;
+}
+.qna_section_2{
+    display: none;
+}
+.qna_section_3{
+    display: none;
+}
+.img_section {
+    width: 100%;
+}
+.img_section img {
+    vertical-align: top;
+    width: 100%;
+}
+
+/* question */
+.question {
+    margin: 20px 0;
+}
+.question h2{
+    font-family: BM;
+    font-size: 40px;
+    color: #4a4a49;
+}
+.question p {
+    font-family: BM;
+    color: #4a4a49;
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+/* answer */
+.answer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    line-height: 2.6;
+    font-size: 16px;
+    word-break: keep-all;
+    background-color: #20a286;
+}
+.answer label {
+    word-break: keep-all;
+}
+input[type=radio]{
+    background-color: #FFFF;
+    border: none;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+input[type=radio]:checked{
+    background-color: #ffda4b;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+/* 버튼 */
+.next_btn {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0 40px;
+    line-height: 55px;
+    text-align: center;
+    background-color: #ffda4b;
+    color: #4a4a49;
+    font-family: 'BM';
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 결과 페이지 */
+.result_section{
+    padding: 80px 0 40px;
+    /* position: relative;
+    top: 80px; */
+    display: none;
+}
+.result_section .section_title {
+    font-size: 30px;
+}
+.result_section .section_title::after {
+    display: none;
+}
+.result_mark {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #ffda4b;
+    text-align: center;
+    font-family: 'BM';
+    font-size: 18px;
+}
+.result_list{
+    width: 100%;
+    margin: 20px 0 40px;
+}
+.result_list li {
+    margin-bottom: 25px;
+}
+.result_list li:last-child {
+    margin-bottom: 0;
+}
+.result_list img {
+    width: 100%;
+    border: 1px solid #4a4a49;
+    box-sizing: border-box;
+    border-bottom: 0;
+}
+.result_list .name {
+    background-color: #20a286;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+    font-family: BM;
+    padding: 10px 5px;
+}
+.result_list .name h2 {
+    font-size: 20px;
+}
+.result_list .name p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.result_list li .name span {
+    font-size: 18px;
+}
+
+/* --------------미디어쿼리---------------- */
+@media all and (min-width:768px) {
+    .img_section {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .answer {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+    input[type=radio]{
+        width: 26px;
+        height: 26px;
+        margin-right: 8px;
+    }
+    input[type=radio]:checked{
+        width: 26px;
+        height: 26px;
+        margin-right: 8px;
+    }
+    label {
+        margin-bottom: 15px;
+    }
+    label:last-child {
+        margin-bottom: 0;
+    }
+    .answer {
+        padding: 35px 10px;
+    }
+    .next_btn {
+        font-size: 24px;
+    }
+    .result_section .section_title {
+        font-size: 32px;
+    }
+    .result_mark {
+        width: 100%;
+        padding: 25px 0;
+        background-color: #ffda4b;
+        text-align: center;
+        font-family: 'BM';
+        font-size: 22px;
+    }
+    .result_list .name h2 {
+        font-size: 24px;
+    }
+    .result_list .name p {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .result_list li .name span {
+        font-size: 20px;
+    }
+}
+@media all and (min-width:1024px){
+    .img_section {
+        width: 30%;
+    }
+
+    .result_list{
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .result_list li{
+        width: 31%;
+        margin-top: 0;
+        margin-right: 3.3333%;
+    }
+    .result_list li:last-child{
+        margin: 0;
+    }
+    .result_list li img{
+        width: 100%;
+    }
+}

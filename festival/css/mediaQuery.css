@@ -1,0 +1,218 @@
+/* 모바일 사이즈 미디어쿼리 */
+@media all and (max-width: 320px) {
+    .pc_slide {
+        display: none;
+    }
+    .slide_arrows {
+        width: 90%;
+    }
+    .slide_arrows button {
+        width: 34px;
+    }
+    .popup {
+        display: none;
+    }
+}
+@media all and (min-width: 320px) {
+    /* 슬라이드 */
+    .mobile_slide {
+        display: block;
+    }
+    .pc_slide {
+        display: none;
+    }
+    .slide_arrows {
+        width: 100%;
+    }
+    .slide_arrows button {
+        width: 34px;
+    }
+
+    /* 팝업모달 */
+    .popup {
+        display: none;
+    }
+
+    /* 배너영역 */
+    .banner_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_list li:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .banner_list li.order1 {
+        order: 1;
+    }
+    .banner_list li.order2 {
+        order: 2;
+    } 
+    .banner_list li.order3 {
+        order: 2;
+    }
+    .banner_list li.order4 {
+        order: 3;
+    }
+}
+
+/*태블릿 사이즈 미디어쿼리*/
+@media all and (min-width: 768px) {
+
+    /* 슬라이드 */
+    .mobile_slide {
+        display: none;
+    }
+    .pc_slide {
+        display: block;
+    }
+    .slide_arrows {
+        width: 95%;
+    }
+    .slide_arrows button {
+        width: 34px;
+    }
+
+     /* 팝업모달 */
+    .popup {
+        display: block;
+    }
+
+    /* 요약 아이콘 */
+    .sum_icon_list li {
+        width: 20%;
+    }
+    .sum_icons li:nth-child(1),
+    .sum_icons li:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    .sum_title {
+        font-size: 20px;
+    }
+
+    /* 주라기's 픽 */
+    .pick_slide {
+        overflow: hidden;
+    }
+    .pick_slide_list {
+        width: 160vw;
+        display: flex;
+        overflow: hidden;
+    }
+    .pick_slide_list li {
+        width: 38vw;
+        box-sizing: border-box;
+        margin-right: 1.2%;
+    }
+    .pick_btn {
+        width: 21%;
+        margin-left: 15px;
+        margin: 0;
+    }
+    .pick_btn>div {
+        width: 44px;
+        height: 44px;
+    }
+    .pick_btn img {
+        width: 32px;
+        padding-top: 6px;
+    }
+    .pick_text_box p {
+        font-size: 20px;
+    }
+    
+    /*  배너영역  */
+    .banner_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .banner_list li {
+        width: 49%;
+    }
+    .banner_list li.order4 {
+        order: 2;
+    }
+    
+    /*  주라기's recipe  */
+    .recipe_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .recipe_list li {
+        width: 49%;
+    }
+    .recipe_hover h3 {
+        font-size: 24px;
+        }
+    .recipe_hover p {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    
+    /*  후원사  */
+    .sponsor_box {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .sponsor_list_top { 
+        width: 43%;
+        margin-right: -13%;
+    }
+    .sponsor_list_top li {
+        width: 30%;
+    }
+    .sponsor_list_top img {
+        width: 80px;
+    }
+
+    .sponsor_list_bottom {
+        width: 45%;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -4.5%;
+    }
+    .sponsor_list_bottom li {
+        width: 33.3333%;
+    }
+    .sponsor_list_bottom li img {
+        width: 80px;
+    }
+}
+
+/* pc사이즈 미디어쿼리 */
+@media all and (min-width: 1200px) {
+    
+    /*슬라이드*/
+    .slide_arrows button {
+        width: 74px;
+    }
+
+    /* 주라기's 픽 */
+    .pick_slide_list {
+        width: 88.8vw
+    }
+    .pick_btn {
+        display: none;
+    }
+    .pick_text_box p {
+        font-size: 26px;
+    }
+    /* 요약아이콘  */
+    .sum_title {
+        font-size: 26px
+    }
+
+    /*  주라기's recipe  */
+    .recipe_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .recipe_list li {
+        width: 32%;
+    }
+}

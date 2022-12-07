@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "gl";
+    src:url("../font/경기천년제목OTF_Light.woff") format("truetype");
+}
+@font-face{
+    font-family: "gb";
+    src:url("../font/경기천년제목OTF_Bold.woff") format("truetype");
+}
+@font-face{
+    font-family: "gm";
+    src:url("../font/g_titleOTF_Medium.woff") format("truetype");
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: top;
+}
+
+
+#wrap{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    font-family: "gl";
+}
+
+li{
+    list-style: none;
+}
+
+
+
+/*모바일헤더 시작---------*/
+
+.header{
+    width: 100%;
+    height: 22px;
+    display: flex;
+    justify-items:center; 
+    align-content: center;
+    padding: 10px 0;
+}
+
+.header_wrap{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.logo{
+    width: 165px;
+    height: 22px;
+    margin: 0 auto;
+    
+}
+
+.logo img{
+    height: 22px;
+}
+
+nav{
+    display: none;
+}
+
+.gnb li a{
+    display: block;
+    height: 32px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.gnb li a:hover{
+    transform: translateY(-10px);
+    color: red;
+}
+
+/*모바일 헤더 끝 ------------*/
+
+.main_bg{
+    background-image: url(../images/imgslide.png);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.main_wrap{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.main_slogan{
+    width: 100%;
+}
+
+.main_slogan img{
+    width: 100%;
+}
+
+.main_logo{
+    margin: 20px 0;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.main_logo img{
+    width: 100%;
+}
+
+.icon_bg{
+    width: 50%;
+}
+
+.icon_bg img{
+    width: 100%;
+}
+
+
+.arrow img{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.arrow{
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+    margin-bottom: 15px;
+    margin: 0 auto;
+}
+
+.contents_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contents:first-child{
+    margin-top: 50px;
+}
+
+.sub_tit{
+    margin-top: 50px;
+    text-align: center;
+    word-spacing: -2px;
+}
+
+.sub_tit p{
+    font-size: 14px;
+    color: #666;
+    font-weight: 600;
+}
+
+.sub_tit h2{
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: "gm";
+    word-spacing: -5px;
+    color: #222222;
+}
+
+.rec_list{
+    display: flex;
+    flex-flow: column;
+}
+
+.rec_list li{
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.rec_list li img{
+    width: 100%;
+    border-radius: 15px;   
+}
+
+.img_box{
+    position: relative;
+}
+
+.txt_box{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.txt_box p{
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.txt_box h3{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.img_box{
+    overflow: hidden;
+}
+
+
+
+.img_box:before{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.img_box:hover:before{
+    background-color: rgba(0,0,0,0.0);
+}
+
+.img_box:hover .img_box img{
+    width: 500%;
+}
+
+.con02{
+    background-image: url(../images/serv_bg.png);
+    width: 100%;
+    padding-bottom: 40px;
+}
+.con02_wrap{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+}
+
+.con03{
+    padding-bottom: 50px;
+}
+
+.serv_box img{
+    margin: 0 auto;
+    display: block;
+}
+
+.map_box img{
+    margin: 0 auto;
+    display: block;
+}
+
+.btn{
+    display: inline-block;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-family: 'gb';
+    color: #797979;
+}
+
+.btn:hover{
+    color: #292929;
+}
+
+.bt_blue{
+    background-color: #8ed1fe;
+}
+
+.bt_red{
+    background-color: #ff999c;
+}
+
+/*footer --------------*/
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #383838;
+    padding-bottom: 50px;
+}
+
+.sns{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+
+.sns li:first-child a{
+    display: block;
+    background-image: url(../images/sns.png);
+    width: 40px;
+    height: 35px;
+    background-position: -10px;
+}
+
+.sns li:nth-child(2) a{
+    display: block;
+    background-image: url(../images/sns.png);
+    width: 40px;
+    height: 35px;
+    background-position: -50px;
+}
+
+.sns li:nth-child(3) a{
+    display: block;
+    background-image: url(../images/sns.png);
+    width: 40px;
+    height: 35px;
+    background-position: -90px;
+}
+
+.sns li:nth-child(4) a{
+    display: block;
+    background-image: url(../images/sns.png);
+    width: 40px;
+    height: 35px;
+    background-position: -127px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    color: white;
+    justify-content: space-between;
+    margin: 30px auto;
+    font-weight: bold;
+}
+
+.contact li{
+    width: 30%;
+    text-align: center;
+}
+
+.footer p{
+    color: white;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+
+
+.quick_bar{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.quick_list{
+    display: flex;
+}
+
+.quick_list li {
+    margin: 0 auto;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #999;
+    color: #fff;
+}
+
+.quick_list li:hover{
+    background-color: #e59f9f;
+    color: white;
+}
+
+/*footer------------end*/
+@media all and (min-width:768px){
+    
+    .main_wrap{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .main_left_box{
+        width: 50%;
+    }
+    
+    .main_left_box img{
+        width: 80%;
+    }
+    
+    .icon_bg{
+        width: 25%;
+        align-items: center;
+    }
+    
+    .arrow{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .rec_list ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    .rec_list ul li{
+        width: 49.2%;
+    }
+    
+    
+    .img_box{
+        width: 100%;
+    }
+    /*테블릿 공통*/
+    .quick_bar{
+        display: none;
+    }
+    
+    nav{
+        display: flex;
+        width: 50%;
+    }
+    .gnb{
+        display: flex;
+    }
+    
+    .gnb{
+        width: 100%;
+    }
+    
+    .gnb li{
+        width: 20%;
+    }
+    
+    .header{
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 999;
+        background-color: white;
+    }
+    
+    .header_wrap{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo{
+        margin: 0;
+    }
+    
+    .main_bg{
+        margin-top: 42px;
+    }
+    
+    
+}
+
+@media all and (min-width:1024px){
+    
+    .main_bg{
+        display: flex;
+        padding-bottom: 10px;
+        margin-top: 42px;
+        padding-top: 70px;
+    }
+    .main_wrap{
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .main_left_box{
+        order: 2;
+        width: 40%;
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    
+    .main_left_box img{
+        width: 100%;
+    }
+    .bg01{
+        order: 1;
+        width: 30%;
+        
+    }
+    .bg02{
+        order: 3;
+        width: 30%;
+    }
+    
+    
+    .icon_bg img{
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 130px;
+    }
+    
+    .arrow{
+        order: 4;
+    }
+    
+    .contents{
+        display: flex;
+        flex-flow: row wrap;
+        padding: 50px 0;
+        justify-content: space-between;
+    }
+    
+    .con02_wrap{
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    
+    .map_box{
+        margin-right: 150px;
+    }
+    
+    .sub_tit{
+        width: 50%;
+    }
+    .rec_list{
+        width: 50%;
+    }
+    
+}
+

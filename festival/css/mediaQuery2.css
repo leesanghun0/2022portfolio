@@ -1,0 +1,99 @@
+/* 모바일사이즈 미디어쿼리 */
+@media all and (max-width:768px) {
+    /* 배경 */
+    .sub_bg {
+        height: 300px;
+    }
+    .sub_bg img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* 태블릿사이즈 미디어쿼리 */
+@media all and (min-width:768px) {
+
+    /* 주류+안주조합 추천 */
+    .recommend_slide_list {
+        /* width: 135vw; */
+        width: 125vw;
+    }
+    .recommend_slide_list li {
+        width: 35vw;
+    }
+    .recommend_slide_list li {
+        margin-right: 0;
+    }
+    
+    /* 해장 추천 */
+    .relive_slide_list {
+        /* width: 180vw; */
+        width: 166vw;
+    }
+    .relive_slide_list li {
+        width: 20vw;
+    }
+    .relive_slide_list li {
+        margin-right: 0;
+    }
+
+    /* 슬라이드 버튼 */
+    .arrows button {
+        width: 64px;
+        height: 64px;
+    }
+
+    /* 꿀조합 레시피 */
+    .recipe_slide_list {
+        width: 241vw;
+    }
+    .recipe_slide_list li {
+        width: 30vw;
+    }
+    .recipe_slide_list li {
+        margin-right: 0;
+    }
+    .recipe_slide_list li:focus .recipe_hover{
+        display: block;
+    }
+    .recipe_hover h3 {
+        font-size: 22px;
+    }
+    .recipe_hover p {
+        font-size: 18px;
+    }
+}
+
+/* pc사이즈 미디어쿼리 */
+@media all and (min-width:1200px) {
+    /* 주류+안주조합 추천 */
+    .recommend_slide_list {
+        width: 82.6vw;
+    }
+    .recommend_slide_list li {
+        width: 20vw;
+    }
+
+    /* 해장 추천 */
+    .relive_slide_list {
+        /* width: 180vw; */
+        width: 126vw;
+    }
+    .relive_slide_list li {
+        width: 15vw;
+    }
+    .relive_slide_list li {
+        margin-right: 0;
+    }
+
+    /* 꿀조합 레시피 */
+    .recipe_slide_list {
+        width: 166vw;
+    }
+    .recipe_slide_list li {
+        width: 20vw;
+    }
+    .recipe_slide_list li {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <title>酒라기</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub3.css">
+    <link rel="stylesheet" href="css/mediaQuery4.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header_top">
+            <h1 class="logo">
+                <a href="main.html">
+                    <img src="images/logo.png" alt="로고">
+                </a>
+            </h1>
+            <div class="gnb_toggle_btn">
+                <a href="#">
+                    <span class="tg_t"></span>
+                    <span class="tg_m"></span>
+                    <span class="tg_b"></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="header_bottom">
+            <ul class="gnb_list">
+                <li>
+                    <h2><a href="sub1.html">축제소개</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">프로그램</a></h2>
+                </li>
+                <li>
+                    <h2><a href="sub2.html">주라기 추천</a></h2>
+                </li>
+                <li>
+                    <h2><a href="sub3.html">주류 테스트</a></h2>
+                </li>
+                <li>
+                    <h2><a href="sub4.html">쇼핑하기</a></h2>
+                </li>
+                <li>
+                    <h2><a href="#">이벤트</a></h2>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 퀵 -->
+    <aside class="quick">
+        <div class="quick_box">
+            <a href="#"><img src="images/cs.png" class="quick_pop" alt="상담 바로가기"></a>
+            <img src="images/close.png" class="q_close" alt="상담 바로가기 닫기">
+        </div>
+    </aside>
+
+    <!-- 페이지네이션 -->
+    <section class="bar_section">
+        <div class="row">
+            <div class="long_bar">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 시작페이지 -->
+    <section class="find_section">
+        <div class="row">
+            <h2 class="section_title">
+                나에게 맞는 술찾기!
+            </h2>
+            <div class="find_btn">
+                <a href="#">시작하기</a>
+            </div>
+            <div class="find_img">
+                <img src="images/find_img_t.jpg" alt="메인 이미지">
+            </div>
+        </div>
+    </section>
+
+    <section class="qna_section">
+        <!-- q1 -->
+        <div class="row qna_section_1">
+            <div class="img_section">
+                <img src="images/question1.png" alt="">
+            </div>
+            <div class="question">
+                <h2>Q1.</h2>
+                <p>가장 선호하는 술자리 유형은?</p>
+            </div>
+            <form>
+                <div class="answer">
+                    <label><input type="radio" name="q1" value="1">집에서 영화와 함께 즐기는 혼술</label>
+                    <label><input type="radio" name="q1" value="2" class="input2">북적북적 지인들과 즐기는 술자리</label>
+                </div>
+                <button type="button" class="next_btn">다음으로 ▶</button>
+            </form>
+        </div>
+        <!-- q2 -->
+        <div class="row qna_section_2">
+            <div class="img_section">
+                <img src="images/question2.png" alt="">
+            </div>
+            <div class="question">
+                <h2>Q2.</h2>
+                <p>친구의 생일날 선물로 주고 싶은 술은?</p>
+            </div>
+            <form>
+                <div class="answer">
+                    <label><input type="radio" name="q2" value="1">달콤하게 오래 즐기는 저도주</label>
+                    <label><input type="radio" name="q2" value="2" class="input2">화끈하게 도수 높은 고도주</label>
+                </div>
+                <button type="button" class="next_btn">다음으로 ▶</button>
+            </form>
+        </div>
+        
+        <!-- q3 -->
+        <div class="row qna_section_3">
+            <div class="img_section">
+                <img src="images/question3.png" alt="">
+            </div>
+            <div class="question">
+                <h2>Q3.</h2>
+                <p>술마신 다음날 당신의 해장 스타일은?</p>
+            </div>
+            <form>
+                <div class="answer">
+                    <label><input type="radio" name="q3" value="1">칼칼하고 얼큰한 매운 음식파</label>
+                    <label><input type="radio" name="q3" value="2" class="input2">기름 좔좔 느끼한 음식파</label>
+                </div>
+                <button type="button" class="next_btn result_btn">결과보기</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 결과페이지 -->
+    <section class="result_section">
+        <div class="row">
+            <h2 class="section_title">나에게 맞는 술 보기!</h2>
+            <div class="result_mark">
+                <p>당신에게 추천드리는 술입니다 :)</p>
+            </div>
+            <ul class="result_list">
+                <li><a href="#">
+                    <img src="images/alcohol1.png" alt="술이미지_단감명작">
+                    <div class="name"><h2>단감명작</h2>
+                    <p>단감의 은은한 단맛<br>(맛의 밸런스가 좋아 식전주로도 가능)<br><span>도수 7% / 18,000원</span></p></div>
+                </a></li>
+            
+                <li><a href="#">
+                    <img src="images/alcohol2.png" alt="술이미지_단감명작">
+                    <div class="name"><h2>사락</h2>
+                    <p>보리맛<br>(한식과 매치하면 좋은 궁합)<br><span>도수 33% / 23,000원</span></p></div>
+                </a></li>
+            
+                <li><a href="#">
+                    <img src="images/alcohol3.png" alt="술이미지_단감명작">
+                    <div class="name"><h2>서설</h2>
+                    <p>쌀의 은은한 단맛<br>(회, 해산물 등 담백한 음식과 어울림)<br><span>도수 13% / 14,250원</span></p></div>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <!--  deemed -->
+    <div class="deemed"></div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <ul class="f_icon_list">
+            <li class="facebook"><a href="#">페이스북</a></li>
+            <li class="twitter"><a href="#">트위터</a></li>
+            <li class="instagram"><a href="#">인스타그램</a></li>
+        </ul>
+        <div class="fnb">
+            <ul class="fnb_list">
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">예약하기</a></li>
+            </ul>
+            <p>주식회사 주라기 | 대표 주라기 | 서울특별시 마포구 상암동 495 | 사업자등록번호: 123-12-1234</p>
+            <p class="copyright">Copyright2022.alcoholrassic All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- 스크립트 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.easing.1.3.min.js"></script> -->
+    <script src="js/menuEffect.js"></script>
+    <script src="js/sub3.js"></script>
+</body>
+</html>

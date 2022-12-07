@@ -1,0 +1,45 @@
+/*태블릿 사이즈 미디어쿼리*/
+@media all and (max-width:768px) {
+    /* 배경 */
+    .sub_bg {
+        height: 300px;
+    }
+    .sub_bg img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media all and (min-width:768px) {
+    input[type="radio"] + label {
+        padding: 35px 0;
+        font-size: 24px;
+    }
+    
+    input[id="alcohol"]:checked ~ .alcohol_list,
+    input[id="goods"]:checked ~ .goods_list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    input[id="alcohol"] .alcohol_list,
+    input[id="goods"] .goods_list {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    .alcohol_list li,
+    .goods_list li{
+        width: 47%;
+    }
+}
+
+/*PC 사이즈 미디어쿼리*/
+@media all and (min-width:1200px) {
+
+    .alcohol_list li,
+    .goods_list li{
+        width: 32%;
+    }
+}
